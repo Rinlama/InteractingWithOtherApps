@@ -24,6 +24,21 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // Get the intent that started this activity
+        Intent intent = getIntent();
+        Uri data = intent.getData();
+
+        // Figure out what to do based on the intent type
+        if (intent.getType().indexOf("image/") != -1) {
+            // Handle intents with image data ...
+        } else if (intent.getType().equals("text/plain")) {
+            // Handle intents with text ...
+        }
+
+        Intent result = new Intent("com.example.RESULT_ACTION", Uri.parse("content://result_uri"));
+        setResult(this.RESULT_OK, result);
+        finish();
     }
 
 
