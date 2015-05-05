@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText"
+    />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:onClick="sendMessage"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/mapedit"
+        />
+    <Button
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:text="MapButton"
+        android:id="@+id/button_Map"
+        android:onClick="openMap"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/webedit"
+        />
+    <Button
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:text="webButton"
+        android:id="@+id/button_web"
+        android:onClick="openweb"
+        />
+
+    <Button
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:text="ContactOpen"
+        android:id="@+id/button_contact"
+        android:onClick="pickContact"
+        />
+    <Button
+        android:layout_width="123dp"
+        android:layout_height="wrap_content"
+        android:text="PhotoOpen"
+        android:id="@+id/button_photo"
+        android:onClick="pickPhoto"
+        />
+
+</LinearLayout>
